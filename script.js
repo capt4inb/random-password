@@ -107,6 +107,10 @@ generateButon.addEventListener("click" , generatePass);
 const copyToClipboard = () => {
     navigator.clipboard.writeText(inputPass.value);
     // inputPass.value = 'COPIED';
+    if(inputPass.value === ""){
+        alert('Please generate a password first');
+        return;
+    }
     alert('Password copied to clipboard : ' + inputPass.value);
 }
 iconCopy.addEventListener('click', copyToClipboard);
