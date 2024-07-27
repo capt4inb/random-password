@@ -46,6 +46,7 @@
     letter-spacing: 2px;
     text-align: center;
     position: relative;
+    cursor: not-allowed;
 }
 
 svg{
